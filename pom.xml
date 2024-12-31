@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		 xmlns="http://maven.apache.org/POM/4.0.0"
+		 xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<artifactId>pagedriver-util</artifactId>
+	<groupId>com.healthedge.commons</groupId>
+	<version>4.24.0.0-SNAPSHOT</version>
+
+	<name>Automation PageDriver</name>
+	<description>Utilizes Selenium based methods test a GUI application.</description>
+
+	<properties>
+	</properties>
+
+	<distributionManagement>
+		<snapshotRepository>
+			<id>Local Snapshot library name</id>
+			<url>https://Local Snapshot Library URL</url>
+		</snapshotRepository>
+		<repository>
+			<id>Local library name</id>
+			<url>https://Local Library URL</url>
+		</repository>
+	</distributionManagement>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>com.aventstack</groupId>
+			<artifactId>extentreports</artifactId>
+			<version>4.0.9</version>
+		</dependency>
+		<dependency>
+			<groupId>com.deque.html.axe-core</groupId>
+			<artifactId>selenium</artifactId>
+			<version>4.9.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.23.1</version>
+		</dependency>
+		<dependency>
+			<groupId>com.healthedge.commons</groupId>
+			<artifactId>properties-util</artifactId>
+			<scope>system</scope>
+			<systemPath>C:\HealthEdge\pagedriver\src\main\resources\properties-util-1.0.0.0-SNAPSHOT.jar</systemPath>
+			<version>1.0.0.0-SNAPSHOT</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+			<version>3.14.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>4.24.0</version>
+		</dependency>
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.10.1</version>
+			<scope>provided</scope>
+		</dependency>
+    </dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.4.0</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<version>3.13.0</version>
+				<configuration>
+					<source>11</source>
+					<target>11</target>
+					<compilerVersion>11</compilerVersion>
+					<encoding>UTF-8</encoding>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-enforcer-plugin</artifactId>
+				<version>3.4.1</version>
+				<executions>
+					<execution>
+						<id>ban-bad-log4j-versions</id>
+						<phase>validate</phase>
+						<goals>
+							<goal>enforce</goal>
+						</goals>
+						<configuration>
+							<rules>
+								<bannedDependencies>
+									<excludes>
+										<exclude>org.apache.logging.log4j:log4j-core:(,2.17.0)</exclude>
+									</excludes>
+								</bannedDependencies>
+							</rules>
+							<fail>true</fail>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

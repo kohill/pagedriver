@@ -1,0 +1,14 @@
+/target/
+/pagedriver-test.iml
+*.html
+.idea/*
+.settings/*
+/*/.settings/*
+/*/test-output/*
+/*/target/*
+/*/*.iml
+/*/.metadata/*
+/logs/
+.classpath
+.loadpath
+.metadata
