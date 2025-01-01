@@ -2,7 +2,9 @@
 
 Designed to house all the capabilities of Selenium, using a non technical nomenclature.  This project will 
 also manage the session(s) necessary for running tests and suites.  The versioning pattern is designed around the
-release cycle of the Selenium project and custom changes:: **major Selenium**.**minor Selenium**.**local major**.**local minor**
+release cycle of the Selenium project and custom changes: 
+
+**major Selenium** . **minor Selenium** . **local major** . **local minor**
 
 ## Release Notes
 
