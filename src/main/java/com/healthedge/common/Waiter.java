@@ -63,11 +63,11 @@ public class Waiter {
     }
 
     /**
-     * Waits for the GW page fade overlay to disappear, indicating that the page has finished loading.
-     * This method waits for the presence of an element with the class 'gw-click-overlay gw-disable-click',
+     * Waits for the page fade overlay to disappear, indicating that the page has finished loading.
+     * This method waits for the presence of an element with the class '[page]-click-overlay [page]-disable-click',
      * and then waits for that element to disappear, indicating that the page has finished loading.
      */
-    public void waitForGwPageFade() {
+    public void waitForPageFade() {
         doWait(By.xpath("//*[contains(@class, '<<<OVERLAY NAME>>>')]"));
     }
 

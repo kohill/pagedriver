@@ -12,6 +12,7 @@
 	<description>Utilizes Selenium based methods test a GUI application.</description>
 
 	<properties>
+		<selenium.version>4.24.0</selenium.version>
 	</properties>
 
 	<distributionManagement>
@@ -26,7 +27,6 @@
 	</distributionManagement>
 
 	<dependencies>
-
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
@@ -46,7 +46,8 @@
 			<groupId>com.healthedge.commons</groupId>
 			<artifactId>properties-util</artifactId>
 			<scope>system</scope>
-			<systemPath>C:\HealthEdge\pagedriver\src\main\resources\properties-util-1.0.0.0-SNAPSHOT.jar</systemPath>
+			<!--Not recommended to hard code path, sample-->
+			<systemPath>C:\props\properties-util-1.0.0.0-SNAPSHOT.jar</systemPath>
 			<version>1.0.0.0-SNAPSHOT</version>
 		</dependency>
 		<dependency>
@@ -57,7 +58,7 @@
 		<dependency>
 			<groupId>org.seleniumhq.selenium</groupId>
 			<artifactId>selenium-java</artifactId>
-			<version>4.24.0</version>
+			<version>${selenium.version}</version>
 		</dependency>
 		<dependency>
 			<groupId>org.testng</groupId>
