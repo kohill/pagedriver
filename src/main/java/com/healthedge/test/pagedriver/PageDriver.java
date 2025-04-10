@@ -1,7 +1,7 @@
-package com.healthedge.test.pagedriver;
+package com.companyname.test.pagedriver;
 
-import com.healthedge.common.Waiter;
-import com.healthedge.config.props.PropertyReader;
+import com.companyname.common.Waiter;
+import com.companyname.config.props.PropertyReader;
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.math.NumberUtils;
 import org.apache.logging.log4j.LogManager;

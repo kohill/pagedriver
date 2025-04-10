@@ -1,4 +1,4 @@
-package com.healthedge.test;
+package com.companyname.test;
 
 public class TestClass {
 

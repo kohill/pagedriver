@@ -1,4 +1,4 @@
-package com.healthedge.test.pagedriver;
+package com.companyname.test.pagedriver;
 
 import org.apache.logging.log4j.Level;
 

@@ -1,4 +1,4 @@
-package com.healthedge.common.exception;
+package com.companyname.common.exception;
 
 public class PageDriverException extends RuntimeException{
 

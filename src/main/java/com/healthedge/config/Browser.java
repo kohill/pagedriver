@@ -1,9 +1,9 @@
-package com.healthedge.config;
+package com.companyname.config;
 
-import com.healthedge.common.exception.PageDriverException;
-import com.healthedge.test.pagedriver.PageDriver;
-import com.healthedge.test.pagedriver.SessionManager;
-import com.healthedge.config.props.PropertyReader;
+import com.companyname.common.exception.PageDriverException;
+import com.companyname.test.pagedriver.PageDriver;
+import com.companyname.test.pagedriver.SessionManager;
+import com.companyname.config.props.PropertyReader;
 import org.apache.commons.lang3.tuple.ImmutablePair;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriverService;

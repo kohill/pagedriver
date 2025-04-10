@@ -1,9 +1,9 @@
-package com.healthedge.common;
+package com.companyname.common;
 
-import com.healthedge.common.exception.PageDriverException;
-import com.healthedge.config.Browser;
-import com.healthedge.config.Properties;
-import com.healthedge.config.props.PropertyReader;
+import com.companyname.common.exception.PageDriverException;
+import com.companyname.config.Browser;
+import com.companyname.config.Properties;
+import com.companyname.config.props.PropertyReader;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.*;
